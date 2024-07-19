@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Product 1",
+        "price": 15.99,
+        "weight": 200
+    },
+    {
+        "name": "Product 2",
+        "price": 25.50,
+        "weight": 350
+    },
+    {
+        "name": "Product 3",
+        "price": 8.75,
+        "weight": 500
+    },
+    {
+        "name": "Product 4",
+        "price": 12.99,
+        "weight": 250
+    },
+    {
+        "name": "Product 5",
+        "price": 19.99,
+        "weight": 300
+    },
+    {
+        "name": "Product 6",
+        "price": 5.99,
+        "weight": 150
+    },
+    {
+        "name": "Product 7",
+        "price": 22.99,
+        "weight": 450
+    },
+    {
+        "name": "Product 8",
+        "price": 11.50,
+        "weight": 220
+    },
+    {
+        "name": "Product 9",
+        "price": 18.75,
+        "weight": 275
+    },
+    {
+        "name": "Product 10",
+        "price": 9.99,
+        "weight": 180
+    },
+    {
+        "name": "Product 11",
+        "price": 20.00,
+        "weight": 400
+    },
+    {
+        "name": "Product 12",
+        "price": 16.50,
+        "weight": 350
+    },
+    {
+        "name": "Product 13",
+        "price": 7.25,
+        "weight": 150
+    },
+    {
+        "name": "Product 14",
+        "price": 13.99,
+        "weight": 250
+    },
+    {
+        "name": "Product 15",
+        "price": 6.50,
+        "weight": 200
+    },
+    {
+        "name": "Product 16",
+        "price": 14.75,
+        "weight": 225
+    },
+    {
+        "name": "Product 17",
+        "price": 21.99,
+        "weight": 500
+    },
+    {
+        "name": "Product 18",
+        "price": 10.99,
+        "weight": 300
+    },
+    {
+        "name": "Product 19",
+        "price": 17.50,
+        "weight": 275
+    },
+    {
+        "name": "Product 20",
+        "price": 12.25,
+        "weight": 325
+    },
+    {
+        "name": "Product 21",
+        "price": 8.50,
+        "weight": 175
+    },
+    {
+        "name": "Product 22",
+        "price": 24.99,
+        "weight": 450
+    },
+    {
+        "name": "Product 23",
+        "price": 5.75,
+        "weight": 120
+    },
+    {
+        "name": "Product 24",
+        "price": 19.50,
+        "weight": 350
+    },
+    {
+        "name": "Product 25",
+        "price": 11.99,
+        "weight": 275
+    },
+    {
+        "name": "Product 26",
+        "price": 14.25,
+        "weight": 220
+    },
+    {
+        "name": "Product 27",
+        "price": 9.50,
+        "weight": 180
+    },
+    {
+        "name": "Product 28",
+        "price": 23.75,
+        "weight": 500
+    },
+    {
+        "name": "Product 29",
+        "price": 7.99,
+        "weight": 150
+    },
+    {
+        "name": "Product 30",
+        "price": 18.25,
+        "weight": 300
+    }
+]

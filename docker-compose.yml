@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    env_file: ./.env
+    volumes:
+      - ~/mongodb_data:/data/db
+    networks:
+      - gts
+  ordermgmtapi:
+    build:
+      context: ./backend-ordermgmt/.
+      dockerfile: Dockerfile
+    image: ordermgmtapiimage
+    container_name: ordermgmtapi
+    env_file: ./backend-ordermgmt/.env
+    ports:
+      - "6000:6000"
+    restart: unless-stopped
+    networks:
+      - gts
+    volumes:
+      - ~/ordermgmtapilogs:/logger/notificationlogs
+    depends_on:
+      - mongodb
+networks:
+  gts:
+    driver: bridge
