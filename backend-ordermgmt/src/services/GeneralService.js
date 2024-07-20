@@ -17,11 +17,11 @@ export class GeneralService {
         }
         if (pageSize == 0) {
             result.data = await this.model.find(searchQuery).sort({ [orderBy]: orderDir });
-            result.count = await this.model.countDocuments(searchQuery);
         } else {
             result.data = await this.model.find(searchQuery).sort({ [orderBy]: orderDir }).skip(offset).limit(pageSize);
-            result.count = await this.model.countDocuments(searchQuery).sort({ [orderBy]: orderDir }).skip(offset).limit(pageSize);
         }
+        result.count = await this.model.countDocuments(searchQuery);
+
         return result;
     }
 

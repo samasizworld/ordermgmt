@@ -25,6 +25,9 @@ export class Order {
                             },
                             price: {
                                 type: Number
+                            },
+                            name: {
+                                type: String
                             }
                         }],
                     totalWeight: {

@@ -20,7 +20,7 @@ services:
     container_name: ordermgmtapi
     env_file: ./backend-ordermgmt/.env
     ports:
-      - "6000:6000"
+      - "7000:6000"
     restart: unless-stopped
     networks:
       - gts
@@ -28,6 +28,17 @@ services:
       - ~/ordermgmtapilogs:/logger/notificationlogs
     depends_on:
       - mongodb
+  ordermgmtportal:
+    build:
+      context: ./frontend-ordermgmt/.
+      dockerfile: Dockerfile
+    image: ordermgmtportalimage
+    container_name: ordermgmtportal
+    ports:
+      - "5500:5500"
+    restart: unless-stopped
+    networks:
+      - gts
 networks:
   gts:
     driver: bridge

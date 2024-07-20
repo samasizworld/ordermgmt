@@ -21,8 +21,8 @@ export class OrderController {
         const orderService = new OrderService();
         const productService = new ProductService();
         const productData = await productService.getProducts('', 0, 0, -1, 'name');
-        const products = new OrderMapper().orderMapper(productorders, productData.data).sort((a, b) => (a.price - b.price));
-
+        const products = new OrderMapper().orderMapper(productorders, productData.data).sort((a, b) => (a.weight - b.weight));
+        
         const packages = this.splitPackages(products);
 
         const order = await orderService.postOrder({ customerName: 'John Doe', packages, orderDate: new Date() });

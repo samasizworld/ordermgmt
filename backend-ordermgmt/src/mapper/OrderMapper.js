@@ -6,7 +6,8 @@ export class OrderMapper {
             return {
                 productId: matchProduct._id,
                 weight: matchProduct.weight,
-                price: matchProduct.price
+                price: matchProduct.price,
+                name: matchProduct.name,
             }
         })
     }
